@@ -1,0 +1,9 @@
+{
+  "actorSpecVersion": 1,
+  "name": "nexus-craigslist-scraper",
+  "title": "Craigslist Scraper",
+  "description": "Crawls craigslist city search pages, extracts title, price, location, date, imageUrl, postUrl",
+  "version": "1.0.0",
+  "buildTag": "latest",
+  "environmentVariables": [],
+}
