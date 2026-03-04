@@ -1,0 +1,37 @@
+{
+  "title": "Craigslist Scraper Input",
+  "description": "Configuration for Craigslist listing scraping",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "cities": {
+      "title": "Cities",
+      "type": "array",
+      "description": "Craigslist city subdomains (e.g., ['newyork', 'losangeles'])",
+      "items": { "type": "string" },
+      "editor": "stringList"
+    },
+    "category": {
+      "title": "Category",
+      "type": "string",
+      "description": "Craigslist category code (sss = for sale, hhh = housing, etc.)",
+      "default": "sss",
+      "editor": "textfield"
+    },
+    "query": {
+      "title": "Search Query",
+      "type": "string",
+      "description": "Search query string",
+      "editor": "textfield"
+    },
+    "maxItems": {
+      "title": "Maximum Items",
+      "type": "integer",
+      "description": "Maximum number of items to scrape",
+      "default": 30,
+      "minimum": 1,
+      "maximum": 500
+    }
+  },
+  "required": ["cities"]
+}
